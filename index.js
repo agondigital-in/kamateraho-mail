@@ -43,7 +43,8 @@ app.post('/send-password', authMiddleware, async (req, res) => {
       from: 'Kamateraho <support@kamateraho.com>',
       to: email,
       subject: 'Your Password is',
-      html: `<p>Your Password is: <strong>${Password}</strong>.</p>`
+      html: `<p>Your Password is: <strong>${Password}</strong>.</p>
+    <div>  <a href="https://kamateraho.com/reset_password.php">Go for Change PassWord</a>/div>`,
     });
 
     if (error) {
