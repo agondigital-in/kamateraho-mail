@@ -24,6 +24,9 @@ const authMiddleware = (req, res, next) => {
 // --- Resend Client ---
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+app.get('/', (req, res) => {
+  res.send('Hello, this is the Resend email service!');
+});
 // --- Route to Send Password, protected by middleware ---
 app.post('/send-password', authMiddleware, async (req, res) => {
   const { email ,Password} = req.body;
