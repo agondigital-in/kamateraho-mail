@@ -76,7 +76,7 @@ app.post('/send-email', authMiddleware, async (req, res) => {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Kamateraho <support@kamateraho.com>',
+      from: 'Kamateraho-info <info@kamateraho.com>',
       to: email,
       subject: subject,
       html: `<div>${message}</div>`,
