@@ -2,7 +2,7 @@
     "build_pack": "nixpacks",
     "base_directory": "/",
     "publish_directory": "/",
-    "ports_exposes": "5010",
+    "ports_exposes": "5000",
     "settings": {
         "is_static": false
     }

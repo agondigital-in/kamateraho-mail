@@ -13,7 +13,7 @@ RUN npm install
 # Copy the rest of the application source code to the working directory
 COPY . .
 
-# Make port 5010 available to the world outside this container
-EXPOSE 5010
+# Make port 5000 available to the world outside this container
+EXPOSE 5000
 # Define the command to run the app
 CMD ["npm", "start"]

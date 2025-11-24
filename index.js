@@ -95,7 +95,7 @@ app.post('/send-email', authMiddleware, async (req, res) => {
 });
 
 const server = app.listen(process.env.PORT, () => {
-  console.log('Server is running on port 5010');
+  console.log('Server is running on port 5000');
 });
 
 export default server;
